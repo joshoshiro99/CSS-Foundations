@@ -1,0 +1,29 @@
+-What are the main differences between external, internal, and inline CSS?
+External CSS is created in a separate file. Internal is created within the <style></style> tag that is placed within the <head></head> tag.
+Inline CSS is placed within the elements attribute.
+
+-What is the syntax for class and ID selectors?
+class selectors use .selector-name{}
+id selectors use #id-name{}
+
+-How would you apply a single rule to two different selectors?
+.selector1 .selector2 {
+
+}
+
+-Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?
+#title.primary{
+
+}
+
+-What does the descendant combinator do?
+The descendant combinator applies rules only if the element has the corresponding ancestor - child relationship e.g:
+<div class="ancestor">
+    <div class="child"> </div>
+</div>
+.ancestor .child {
+    property: value;
+}
+
+-Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
+The class selector will beat any number of type selectors; the class selector has the higher specificity.
